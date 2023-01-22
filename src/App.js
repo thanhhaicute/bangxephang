@@ -15,7 +15,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    axios.get('https://14.225.254.113:8000/datauser')
+    axios.get('http://14.225.254.113:8000/datauser')
       .then(res => {
         const loadData = res.data;
         this.setState({ loadData });
